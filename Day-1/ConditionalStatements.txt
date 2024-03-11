@@ -1,0 +1,129 @@
+1. Eligbile to vote or not:
+===========================
+
+start:
+	ask the user to enter age.
+	read the age.
+	check if age is greater than or equal to 18,
+		yes then print eligible for vote.
+		no then print not eligible for vote.
+end.
+
+
+2. Student grade:
+================
+
+start:
+	ask the student to enter his/her marks in physics,chemistry and mathematics.
+	read the marks.
+	declare totalMarks variable to store total marks.
+	add 3 subject marks and store in totalMarks variable.
+	calculate the percentage using totalMarks/number of subjects.
+	if(percentage greater than 90)
+		output "1st class"
+	else if(percentage greater than 75)
+		output "2nd class"
+	else if(percentage greater than 50)
+		output "3rd class"
+	else
+		output "4th class"
+end.
+
+
+3. Display color:
+-----------------
+
+start:
+	ask the user to enter the color.
+	read the color.
+	use switch statement
+	switch(color)
+	  case(color is red)
+		output: "red"
+		break
+	  case(color is black)
+		output: "black"
+		break
+	  case(color is pink)
+		output: "pink"
+		break
+	  default:
+		output:"no color selected"	
+		break
+end.
+
+
+4. Two numbers equal or not:
+===========================
+
+start:
+	ask the user two enter first number.
+	read the first number and store in number1 variable.
+	ask the user two enter second number.
+	read the first number and store in number2 variable.
+	if(number1 is equal to number2)
+		output:"both numbers are equal"
+	else
+		output:"numbers are not equal"
+end.
+
+
+5. Number is even or odd:
+=========================
+
+start:
+	ask the user to enter the number.
+	read the number.
+	check if(number is divisible by 2)
+		output "even"
+	otherwise,
+		output "odd"
+end.
+
+
+6. Number is negative or positive:
+=================================
+
+start:
+	ask the user to enter the number.
+	read the number.
+	check if(number is less than 0)
+		output "negative"
+	otherwise,
+		output "positive"
+end.
+
+7. Leap year or not:
+===================
+
+start:
+	ask the user to enter the year.
+	read the year.
+	check if(year is divisible by 4) {
+
+		if it is divisible check if(year is divisible by 100) {
+
+			if it is divisible check if(year is divisible by 400) 
+				output: "LEAP year"
+
+			otherwise
+				output:"NOT LEAP year"
+		}
+
+		otherwise
+			output: "LEAP year"
+
+	otherwise
+		output:"NOT LEAP year"
+	}
+end.
+
+
+
+
+
+
+
+
+
+

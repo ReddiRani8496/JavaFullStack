@@ -1,0 +1,240 @@
+1. Read and print array elements:
+================================
+
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	use the loop to traverse the array
+		print the array elements using index.
+	--- for(int i=0;i<size;i++) {
+	---	output "arr[i]"
+	--- }
+end.
+
+
+2. Print array in reverse order:
+===============================
+
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	declare two pointers start as 0 and end as size of the array -1.
+	swap the first and last elements in the array using start and end.
+	repeat previous step until start is less than or equal to end.
+	use the loop to traverse the array
+	print the array elements using index.
+	--- for(int i=0;i<size;i++) {
+	---	output "arr[i]"
+	--- }
+end.
+
+
+3. Sum of array elements:
+========================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	declare sum variable to store sum of array elements.
+	use the loop to traverse the array.
+	add each array element to sum.
+	--- for(int i=0;i<size;i++) {
+	---	sum = sum + arr[i];
+	--- }
+	
+	output: "sum"
+end.
+
+
+4. copy elements from one array to another array:
+===============================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	declare one more array with same size.
+	traverse the first array and copy the elements to second array.
+	Let's say first array name as arr1,  second array name as arr2.
+	for(int i=0;i<arr1.size;i++)
+		arr2[i]=arr1[i]
+end.
+
+
+5. count total duplicate elements in array:
+==========================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	declare count variable to count duplicate elements.
+	sort the array using Arrays.sort(arr)
+	for(int i = 0; i < size-1; i++) {
+		if(arr[i] == arr[i+1]) 	
+			increment count by 1
+	}
+	check if the last element and last but element is equal or not.
+		if equal increment count by 1.
+		otherwise ignore.
+	
+	output: "count"
+end.
+
+
+6. Print unique elements in array:
+=================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	sort the array using Arrays.sort(arr)
+	for(int i = 0; i < size-1; i++) {
+		while (i < arr.length - 1 && arr[i] == arr[i + 1]) {
+                	i++;
+            	}	
+		output: arr[i]
+	}
+	check if the last element and last but element is equal or not.
+		if not equal output: arr[size-1]
+end.
+
+7. Merge Two arrays in descending order:
+=========================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array1 elements.
+	read the array1 elements.
+	ask the user to enter array2 elements.
+	read the array2 elements.
+	declare the array3 with double size.
+	declare two variables i and j, such that i tracks the index of array1 and j tracks the index of array2.
+	declare k variable to track the index of array3.
+	while(i<array1Size && j<array2Size) {
+		if(array1[i]>=array2[j] {
+			array3[k++]=array1[i];
+			increment i by 1.
+		} else {
+			array3[k++]=array2[j];
+			increment j by 1.
+		}
+	}
+	while(i<array1Size) {
+		array3[k++]=array1[i];
+		increment i by 1.
+	}
+	while(j<array2Size) {
+		array3[k++]=array2[j];
+		increment j by 1.
+	}
+		
+	print the array3.
+end.
+
+8. count frequency of each array element
+========================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	sort the array using Arrays.sort(arr)
+	traverse the array using loop
+	assign currentElement = arr[0]
+	declare count = 0
+	for(int i=1;i<size;i++) {
+		if(arr[i]==currentElement)
+			increment the count by 1.
+		else {
+		   print "current Element concatinating count"
+		   assign arr[i] to currentElement	
+		   set count to 0
+		}
+	}
+end.
+
+
+
+9. Maximum and minimum element in the array:
+============================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	sort the array using Arrays.sort(arr)
+	print "arr[0] as minimum element"
+	print "arr[size-1] as maximum element"
+end.
+
+
+10. seperate even and odd elements:
+===================================
+
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	declare two variables to count the number of even and odd elements, helpfull while creating arrays of even and odd.
+	traverse the array using for loop.
+	for(int i = 0; i < size; i++) {
+		if(arr[i] is divisible by 2)
+			increment the evenCount by 1.
+		otherwise,
+			increment the oddCount by 1.
+	}
+	declare the even array with size evenCount.
+	declare the odd array with size oddCount.
+	for(int i = 0; i < size; i++) {
+		if(arr[i] is divisible by 2)
+			add the element to even array
+		otherwise,
+			add the element to odd array
+	}
+end.
+	
+
+11. Sort elements in ascending order:
+=====================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	--- using bubble sort 
+	sort the largest element by moving largest element to end of the array.
+	repeat the above step until whole array traversed.
+	for(int i=0;i<n-1;i++)
+    		for (int j=0;j<n-i-1;j++) {
+        		if arr[j] > arr[j+1]
+            		swap(arr[j], arr[j+1])
+		}
+end.
+
+12. sort elements in descending order:
+======================================
+start:
+	Ask the user to enter number of elements in array.
+	read the size of array.
+	ask the user to enter array elements.
+	read the array elements.
+	for(int i=0;i<n;i++)
+		int min = Integer.MAX_VALUE;
+		int index = i
+		for(int j=i+1;j<n;j++) {
+			if(arr[j]<min) {
+				min = arr[j]
+				index = j;
+			}
+		}
+		swap(arr[i],arr[index])
+end.
+	
+
+

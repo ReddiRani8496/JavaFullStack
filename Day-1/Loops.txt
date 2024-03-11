@@ -1,0 +1,126 @@
+1. Reverse a number:
+====================
+start:
+	ask the user to enter the number.
+	read the number.
+	declare reverse varible.
+	while(n>0) {
+		reverse = reverse*10+(n%10)
+		n /= 10
+	}
+	print reverse
+end.
+
+2. Factorial of a number:
+========================
+start:
+	ask the user to enter the number.
+	read the number.
+	declare factorial variable to store the output.
+	while(n>0) {
+		factorial = factorial * n;
+		decrement n by 1;
+	}
+	print "factorial"
+end.
+
+3. String palindrome or not:
+============================
+start:
+	ask the user to enter the string.
+	read the string.
+	declare two pointers start as 0 and end as string length minus 1.
+	while(start<=end) {
+		if(str.charAt(start)!=str.charAt(end))
+			return "false"
+	}
+	return "true"
+end.
+
+4. Reverse a String:
+====================
+start:
+	ask the user to enter the string.
+	read the string.
+	declare one more string variable to store the output
+	for(int i=str.length()-1;i>=0;i--){ --- traverse the string in reverse
+		result += str.charAt(i);
+	}
+	print "result"
+end.
+
+5. Reverse each word of String:
+===============================
+start:
+	ask the user to enter the string.
+	read the string.
+	 String[] words = str.split("\\s+")
+        StringBuilder reversedString = new StringBuilder()
+        for (String word : words) {
+            StringBuilder reversedWord = new StringBuilder(word)
+            reversedWord.reverse()
+            reversedString.append(reversedWord).append(" ")
+        }
+
+        return reversedString.toString().trim()
+end.
+
+6. Number prime or not:
+======================
+
+start:
+	ask the user to enter the number.
+	read the number.
+	if number is less than or equal to 1 print "Not prime"
+	else {
+		for(int i=2;i<n;i++)
+			if(n is divisible by i)	
+				print "not prime"
+	}
+	print "prime"
+end.
+
+
+7. Print first 100 prime numbers:
+=================================
+
+start:
+	declare the count variable.
+	declare the number variable with 2.
+	while(count < 100) {
+
+		if(number is prime)
+			print the number and increment count by 1
+
+	increment the number by 1.
+	}
+
+end.
+
+8. Display numbers in a pyramid fashion:
+========================================
+
+start:
+	ask the user to enter the number.
+	read the number.
+	for(int i=1;i<=rows;i++) {
+		for(int j=1;j<=rows-i;j++) {
+			print(" ");
+		}
+		for(int k=1;k<=i;k++){
+			print(k+" ");
+		}
+		for(int l=i-1;l>=1;l++) {
+			print(l+" ");
+		}
+		println();
+	}
+end.
+	
+
+
+
+
+
+
+
