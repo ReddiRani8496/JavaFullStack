@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="tarining.iqgateway.entities.Company" table="COMPANY">
+<id name="contact" type="java.lang.String">
+<column name="CONTACT" />
+<generator class="assigned" />
+</id>
+<property name="address" column="ADDRESS" type="Address"></property>
+<property name="id" column="ID" type="java.lang.Integer"></property>
+<property name="name" column="NAME" type="java.lang.String"></property>
+ 
+		<property name="phone" column="PHONE" type="java.lang.String"></property>
+
+<property name="discount" type="int">
+<column name="DISCOUNT" />
+</property>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;training.iqgateway.entities&apos; to &apos;training.iqgateway.entities.onetoone&apos;&#x0D;&#x0A;- Original project: &apos;Lesson07-Relationships&apos;&#x0D;&#x0A;- Original element: &apos;Lesson07-Relationships/src/training.iqgateway.entities&apos;&#x0D;&#x0A;- Renamed element: &apos;Lesson07-Relationships/src/training.iqgateway.entities.onetoone&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;training.iqgateway.entities&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;training.iqgateway.entities" name="training.iqgateway.entities.onetoone" qualified="false" references="true" stamp="1715324299441" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="training.iqgateway.entities.Customer" table="CUSTOMER">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        
+        <component name="address" class="training.iqgateway.component.Address">
+        <parent name="customer"></parent>
+          <property name="dooorNo" type="java.lang.Integer">
+            <column name="Door_No" />
+        </property>
+         <property name="streetName" type="java.lang.String">
+            <column name="Street_Name" />
+        </property>
+         <property name="area" type="java.lang.String">
+            <column name="Area" />
+        </property>
+         <property name="city" type="java.lang.String">
+            <column name="City" />
+        </property>
+        
+        <property name="pincode" type="java.lang.Integer">
+            <column name="Pincode" />
+        </property>
+        </component>
+        
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        
+        
+        
+        
+        <joined-subclass name="training.iqgateway.entities.Company" table="Company">
+        	<key column="Company_Id"></key>
+        	<property name="contact" column="Contact" type="java.lang.String"></property>
+        	<property name="discount" column="Discount" type="java.lang.Integer"></property>
+        </joined-subclass>
+        
+         <joined-subclass name="training.iqgateway.entities.Individual" table="Individual">
+        	<key column="Individual_Id"></key>
+        	<property name="licNumber" column="LicNumber" type="java.lang.String"></property>
+        	
+        </joined-subclass>
+        
+        
+    </class>
+</hibernate-mapping>

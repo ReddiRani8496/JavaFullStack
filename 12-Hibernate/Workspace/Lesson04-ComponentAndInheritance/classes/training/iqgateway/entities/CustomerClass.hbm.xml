@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"
+http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2024 9:38:08 AM by Hibernate Tools 3.5.0.Final -->
+	<hibernate-mapping>
+	<class name="training.iqgateway.entities.Customer" table="CUSTOMERS">
+	<id name="id" type="java.lang.Integer">
+	<column name="ID" />
+	<generator class="assigned" />
+	</id>
+	<discriminator column="CUSTOMER_TYPE" type="string"/>
+	<property name="name" type="java.lang.String">
+	<column name="NAME" />
+	</property>
+	<property name="address" type="java.lang.String">
+	<column name="ADDRESS" />
+	</property>
+	<property name="phone" type="java.lang.String">
+	<column name="PHONE" />
+	</property>
+	<subclass name="training.iqgateway.entities.Company"
+				discriminator-value="c">
+	<property name="contact" type="java.lang.String" column="CONTACT"/>
+	<property name="discount" type="java.lang.Integer" column="DISCOUNT"/>
+	</subclass>
+	<subclass name="training.iqgateway.entities.Individual"
+				discriminator-value="i">
+	<property name="licNumber" type="java.lang.String" column="LIC_NUMBER"/>
+	</subclass>
+	</class>
+	</hibernate-mapping>
