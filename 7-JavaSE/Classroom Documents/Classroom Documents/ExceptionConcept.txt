@@ -1,0 +1,35 @@
+Exception
+
+	Predefined
+				
+				Exceptions already notified in Java
+
+
+	User Defined
+
+				Exception notified by User
+		
+ 
+
+
+
+
+try
+{
+	Statement ( Opening a File )
+
+	Statement ( Writing Contents to File )
+
+
+
+}catch( )
+{
+
+	Handle if any Exception is Raised 
+
+
+}
+finally
+{
+	Statement ( Closing a File )
+}

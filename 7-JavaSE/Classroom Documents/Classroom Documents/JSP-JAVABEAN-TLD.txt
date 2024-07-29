@@ -1,0 +1,38 @@
+Step 1 : Create a Web Structure
+
+Step 2: Place JSP's and Html in Context
+
+		beans.html, beans.jsp
+
+
+Step 3 : Create A Java Bean to Interact with JSP
+
+		LanguageBean
+
+		 a.	Place the Java Files in classes Dir
+
+		 b.	Compile using
+
+			javac -d . LanguageBean.java
+
+
+
+
+Custom Tags Execution
+
+Step 1 :  Create Web Structure
+
+Step 2 : 
+		
+
+		a.	Create a Tag Handler
+
+				with Usage of Tag or BodyTag interface
+
+				TagSupport or BodyTagSupport
+
+		b.	Register the Tags in .tld File
+
+		c.	Create A Jsp Which Uses Custom Tag
+
+	

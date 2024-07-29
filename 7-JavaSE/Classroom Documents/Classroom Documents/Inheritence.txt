@@ -1,0 +1,39 @@
+In Java the concept of Inheritence is used by a
+
+Keyword extends
+
+syntax
+
+class <class Name> extends < Base Class Name >
+{
+	// Instance Variables of Base Class
+
+	// Instance Functions of Base Class
+
+	// Instance Variables of Current Class
+
+	// Instance Functions of Current Class
+}
+
+
+class A
+{
+	Member Functions
+
+	Member Variables
+
+}
+
+class B extends A
+{
+
+	Member Variables of class A
+
+	Member Functions of class A
+
+
+	Member variables of Class B
+
+	Member Functions of Class B
+
+}

@@ -1,0 +1,59 @@
+What is an Interface ?
+
+	An Interface is a concept where we have only  the signature of methods.
+
+	Interface contain methods with Only  Declarations ( Abstract Methods )
+
+	Any class which requires our interface to 
+
+	be used.. It should use the concept of 
+
+	implements
+
+
+	syn
+
+	class < class Name > extends <class Name > implements <Interface 1 >,<Interface 2 >,<Interface 3 >,.......<Interface n >
+
+
+
+
+
+Interfaces.....
+
+-> It is also similar to that of class
+
+   But only one thing what is differing from  the 
+   class ( All the methods are abstract in nature )
+
+-> Use key word implements with interfaces 
+
+-> Your class can implement one or more             interfaces separted by comma.
+
+class MyClass implements Bus,Car
+
+-> Whether we use all the methods are not its our 
+
+   binded duty to provide implementations for all 
+
+   the methods which are in interfaces.
+
+1. A class can extend to another class
+
+2. An interface can extend to another interface
+
+
+
+public interface < Interface Name >
+
+{
+
+	// Member Variables
+	
+	M V are static final and public in nature
+
+
+
+	// Member Functions ( Fully Abstract  )
+
+}

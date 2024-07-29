@@ -1,0 +1,36 @@
+
+Session 7 :
+
+Static
+
+	1.  Can Be Accessed Via Class Name
+
+	2.  Can Be Accessed Via Object Ref
+
+	3.  Can Be Accessed Via Other Static Methods
+
+	4.  Can Be Accessed Via Instance Methods
+
+
+Inner Classes
+	
+	Defined With a Class
+
+		1. Member Level Inner Class
+
+		2. Static Inner Class
+	
+	Defined With in A Method
+
+		3. Local Inner Class
+
+		4. Anonymous Inner Class
+
+
+
+
+
+
+
+
+

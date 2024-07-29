@@ -1,0 +1,8 @@
+Customer Practice:
+=================
+
+3.a. id, name, address, phone
+  b. 8
+  c. String
+  d. public
+

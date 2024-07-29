@@ -1,0 +1,135 @@
+Exceptions
+
+
+	Types
+			
+			Checked 
+
+			UnChecked
+
+
+
+	Classification
+
+	Predefined
+
+	User Defined
+
+	 
+// Multiple Catch  Blocks
+try
+{
+
+	Statement1.( a/b )
+	Statement2.( arr[100])
+ 	Statement3.NpE
+	Statement4.NfE
+}
+catch(ArithmeticException e)
+{
+
+}
+catch(ArrayIndexOutOfBoundsException e1)
+{
+
+}
+catch(Exception e1)
+{
+
+}
+finally
+{
+
+}
+
+
+
+Illustration for Throws
+
+public void someFunction() 
+{
+	Statement1.( a/b )
+	Statement2.( arr[100])
+	Statement3.NpE
+	Statement4.NfE
+}
+
+public static void main(String args[])
+{
+	try
+	{
+		someFunction();
+	}
+	catch(ArithmeticException )
+	{
+
+	}
+	catch(ArrayOutOfBoundsException )
+ 	{
+
+	}
+	catch(Exception )
+	{
+
+	}
+
+}
+
+
+
+NESTED TRY CONCEPT
+
+try
+{
+
+	s1
+	s2
+	s3
+	.
+	.
+	.
+	sn
+	
+	try
+	{
+		s11
+		s12
+		s13
+		s14
+		...
+		s1n
+
+		try
+		{
+			s111
+			s112
+			...
+
+			s11n
+		}
+		catch(s111Exception e)
+		{
+
+		}
+		.
+		.
+		.
+	}
+	catch(s11Exception e123)
+	{
+
+	}
+	...
+	
+
+}catch(s1Exception se1)
+{
+
+}
+..
+
+throw Syntax:
+
+
+throw <Exception Object >;
+

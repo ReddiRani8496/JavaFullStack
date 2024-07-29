@@ -1,0 +1,31 @@
+Packages 
+
+What is a Package ?
+
+Package is collection of classes..
+
+Why ?
+
+Since Organising is requried for better usage..
+
+How to Create package ?
+
+package < Package Name >
+
+How many ways to create Package 
+
+	1. Mannual 
+
+		Compile the class files and mannual create the dir structure and copy the class files ..
+
+	2. Automatic
+
+		At the time of compilation
+
+		javac -d < Location>  <File Name>
+
+How to use a package.
+
+By using import statement.
+
+

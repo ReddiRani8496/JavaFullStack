@@ -1,0 +1,59 @@
+Inner Class Definition
+
+An inner class is simply a class that is defined within a class.
+You define inner classes because they functionally support the outer class or because they make sense in the context of the enclosing class.
+Inner classes have different privileges when accessing outer class members according to the type of inner class they are.
+There are four different types of inner classes:
+
+Defined in a class:
+		Static Inner Class
+		Member Inner Class
+
+Defined in a method:
+		Local Inner Class: Used within the scope of the method it was declared in
+		Anonymous Inner class: Used globally outside of the method it was declared in 
+
+You must be careful when using inner classes, because they can make the code more difficult to read, especially for people who have to maintain the application.
+
+Inner classes result from the combination of block structure with class-based programming, which was pioneered by the Beta programming language. Using block structure with inner classes makes it easier for the Java programmer to connect objects together, because classes can be defined closer to the objects that they need to manipulate, and can directly use the names that they need.
+
+
+
+
+
+
+
+Member Inner Class: Example
+
+
+To better understand Member Inner classes, look at this example:
+You have an application with a few date items, such as booking date and return date, and you want to allow the users to select a specific booking date from a pop-up calendar. You can put a button on the user interface, which when clicked, invokes a pop-up calendar displaying the current date. The user can then select a different month for the booking or select a specific day. 
+In this example, a top-level class can be used to control the pop-up calendar. The month selector class can be implemented as a Member Inner class of the calendar. The MonthSelector class will then populate an array with the appropriate days in the month. The DayOfMonth class is a Member Inner class, because it is created within a class and not a method.
+
+
+
+
+
+Local Inner Class: Example
+
+
+To better understand Local Inner classes, look at this example: 
+You have the same application as before, with a few date items, such as booking date and return date.You can put a button on the user interface, which when clicked, invokes a pop-up calendar displaying the current date. The user can then select a different month for the booking or select a specific day. 
+In this example, a top-level class can be used to control the pop-up calendar functionality. The DateHandler class can be implemented as a Local Inner class of the CalendarPopup. After a booking day button is clicked, and then accepted, the action handler method invoked can create a Local Inner class to store the booking date and calculate the return date. In this case, the Local Inner class will be used within the action handler and nowhere else. The Local Inner class is used only with the scope of the action handler.
+
+
+
+Anonymous Inner Classes
+
+Anonymous inner classes are Local Inner classes with no class name. The class keyword is omitted and so are public, protected, extends, and implements. They are commonly used to implement user interface adapters to perform event handling when using AWT or Swing events.
+Anonymous inner classes have the same restriction as Local Inner classes concerning the visibility on the outer class elements.
+The generic anonymous class syntax takes the form: 
+Class Outer {
+	 …
+	AnInnerAnonymousClass (new SuperClass ( ) {
+		. . .
+	} );
+	. . .
+}
+The anonymous class is derived from a superclass that allows the use of the methods of this superclass. Anonymous inner classes can implicitly extend or implement only other classes or interfaces. The use of anonymous classes is most effective when they implement only a single or very few small methods. Reading the code can get confusing when the definition of the inner class is long.
+Anonymous inner classes have the same accessibility rules as Local Inner classes. It is primarily used to create a one-time implementation class of an interface.

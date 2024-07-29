@@ -1,0 +1,17 @@
+
+Memory Areas
+
+1.   Registers           [  Processors ]
+
+2.   Stack Area		     [  RAM  ]
+
+3.   Object Heap         [  RAM  ]
+
+4.   Static Storage      [  RAM  ]
+
+5.   Constant Storage    [  RAM  ]
+
+6.   Method Area         [  RAM  ]
+
+7.   Persistence Storage [  Non RAM ]
+

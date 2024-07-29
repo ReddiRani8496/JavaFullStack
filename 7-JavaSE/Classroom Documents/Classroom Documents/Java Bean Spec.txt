@@ -1,0 +1,86 @@
+Java Bean
+
+	Is a Software Resuable Component 
+
+		Phases
+
+			1.	Design Phase
+
+			2.	Build Phase
+
+			3.	Execution Phase
+
+
+		
+		Characterstics
+
+			1.	Customization
+	
+			2.	Persistence
+
+			3.	Introspection
+
+
+			
+	Two Flavours
+
+
+		GUI Role
+
+				Button, 
+
+		Model Role
+
+				Generally Used in MVC Architecture
+
+Java Bean Specification 
+
+1.	A class if it Contains private properties it should be accessed by Instance Methods.
+
+2.	Each and every property which is available can contain appropriate Getter and Setter Methods
+
+3.	All the Methods should be public 
+
+4.	Methods we write for property should Always prefixed with set Or get. And the suffixed property name Should be TitleCase.
+
+	a.	Getter Methods : Are always used in retreiving value
+
+		The Return type of getter Method should be same as the type of Property.
+
+		Parameter to Getter Method should always be VOID
+
+		Example
+
+		public class LanguageBean 
+		{
+			private String name;
+
+			public String getName()
+			{
+			     return this.name;
+			}
+
+		}
+
+	b.  Setter Method : Is always used in Updating Property
+
+		->	Setter Method should have void as Return Type
+
+		->	Setter Method Should always have a parameter of 	
+			the type of Property
+
+
+		Example
+
+			public class LanguageBean 
+			{
+				private String name;
+	
+				public void setName(String NewValue)
+				{
+					this.name = NewValue;
+				}
+
+			}
+
+	

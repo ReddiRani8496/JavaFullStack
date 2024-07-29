@@ -1,0 +1,83 @@
+Application Logics
+
+1.  Presentation Logic ( UI )
+
+2.  Business Logic   ( Application Logic )
+
+3.  Persistence Logic 
+
+
+Application Architectures
+
+
+1.  Single  Tier ( Stand Alone / Desktop )
+
+	+  Faster, Secured, Simple
+
+
+	-  No Data / Resource Sharing
+
+2.  Two Tier ( Client Server )
+
+
+3.  N Tier ( Client Middleware DB Server )
+
+
+
+Object Oriented Programming
+
+1.   Classes and Objects
+
+2.   Inheritence 
+
+3.   Polymorphism
+
+4.   Encapsulation / Data Abstraction
+
+
+Java Programming Architecture
+
+1.  Java Source Code
+
+2.  Java Class File Format
+
+3.  Java Application Programming Interface
+
+4.  Java Virtual Machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

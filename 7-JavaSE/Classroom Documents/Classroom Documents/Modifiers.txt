@@ -1,0 +1,32 @@
+Abstract Functions
+
+< Access Specifier > < Access Modifier > <Return Type > < Function Name >( Parameter List);
+
+
+An Abstract class is a class which can contain one or more abstract Functions
+
+We can't Create an instance of Abstract class
+( Throws an Instantiation Exception )
+
+Any class which uses the abstract class its the binded duty of that class to provide the definations of all the abstract methods avaiable.
+
+
+
+Interfaces.....
+
+-> It is also similar to that of class
+
+   But only one thing what is differing from  the 
+   class ( All the methods are abstract in nature )
+
+-> Use key word implements with interfaces 
+
+-> Your class can implement one or more             interfaces separted by comma.
+
+class MyClass implements Bus,Car
+
+-> Whether we use all the methods are not its our 
+
+   binded duty to provide implementations for all 
+
+   the methods which are in interfaces.

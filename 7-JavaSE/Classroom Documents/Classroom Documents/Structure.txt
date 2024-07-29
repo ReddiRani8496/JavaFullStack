@@ -1,0 +1,48 @@
+Structure of Java Program
+
+1. Comment Section  [ Optional ]
+	
+	// Single Line
+
+	/*
+	   Multi Line 
+	*/
+
+   /**
+	*
+	*  Documentation 
+	*
+	*/  
+
+2. Package Section  [ Optional ]
+	
+	package <Package Name>;
+
+3. Import Section   [ Optional ]
+
+	imports a set of packages.
+	
+	import java.sql.*;
+	import java.sql.Driver;
+	import java.awt.*;
+	import java.awt.event.*;
+	
+	[ By Default there is one package which Available java.lang.* ]
+	
+4. Interface Section [ Optional ]
+
+	In this Section we define a set of 
+
+	Interfaces.
+
+
+5. Abstract Class Section [ Optional ]
+
+	In this Section we define a set of 
+
+	Abstract Classes
+
+
+6. Contrete Class Defination Section [ Optional ]
+
+	We Can define a set of Classes

@@ -1,0 +1,54 @@
+<Access Modifiers > class < Class Name >
+{
+
+	// Member Variable Section / Instance Variables/ Attributes/ Properties
+
+	< Access Modifiers > < Data Type > variableName;
+	.
+
+	.
+
+	//  Class Variables Section / Global Variables / Static Variables
+
+	< Access Modifiers > static < Data Type> variableName;
+
+	.
+
+	.
+
+	.
+
+	
+
+	// Member Function Section / Instance Methods
+	
+	< Access Modifiers > < Return Type > <Function Name>(Parameter List ) 
+	{
+		Body
+	}
+
+
+	// Static Function Section / Global Methods
+	
+	<Access Modifiers > static <Return Type> <Function Name>(Parameter List ) 
+	{
+		Body
+	}
+	
+	// Is Used to Initailize Static Variables
+	static
+	{
+	
+	
+	}
+
+	// Special Functions ( Constructors )
+
+	<Access Modifier> < Function Name with same name is Class >(Para)
+	{
+
+	}
+
+
+}
+	

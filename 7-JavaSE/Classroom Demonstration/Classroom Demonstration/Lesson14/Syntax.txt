@@ -1,0 +1,32 @@
+Syntax
+
+INSERT
+
+	insert into <tableName> (ColumnNames) Values ( list values)
+
+		enclose '    ' with character data
+
+	
+DELETE
+
+
+	delete from <tablename> where Condition
+
+
+UPDATE
+
+	update table <tableName> set columnName=New Value where  <condition >
+
+
+SELECT
+
+	select * from <tableName> where Condition
+
+
+CREATE 
+
+	create table <tableName>(ColumnName DataTypes)
+
+
+
+	create table Student(Std_Name varchar(40), Std_ID Integer)
