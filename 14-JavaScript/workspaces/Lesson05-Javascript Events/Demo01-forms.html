@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="https://www.google.com/search">
+            <label for="search">Search the result</label>
+            <input type="search" name="q" id="search">
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <br>
+        <form action>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="8"
+                maxlength="20"> <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"> <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email"
+                id="email"> <br>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label> <br>
+
+            <input type="checkbox" name="language" id="english">
+            <label for="english">English</label> <br>
+            <input type="checkbox" name="language" id="french">
+            <label for="french">French</label> <br>
+            <input type="checkbox" name="language" id="spanish">
+            <label for="spanish">Spanish</label> <br>
+
+            <label for="file-select">Upload: </label>
+            <input type="file" name="file-select" id="file-select"> <br>
+
+            <label for="city">City: </label>
+            <select name="city" id="city">
+                <option value="banglore">Banglore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="chennai">Chennai</option>
+            </select> <br>
+            <br>
+            <label for="Abstract">Abstract</label>
+            <textarea name="message" id="Abstract" cols="30"
+                rows="10"></textarea>
+
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" list="sugge">
+            <datalist id="sugge">
+                <option value="Banglore"></option>
+                <option value="Hyderabad"></option>
+                <option value="Chennai"></option>
+            </datalist>
+            <br>
+            <br>
+            <label for="color">Choose a color:</label>
+            <input type="color" name="color" id="color"> <br>
+            <label for="date">choose a date:</label>
+            <input type="date" name="date" id="date"> <br>
+
+            <label for="time">Choose a time:</label>
+            <input type="time" name="time" id="time"> <br>
+
+            <label for="localdatetime">Choose date of birth:</label>
+            <input type="datetime-local" name="localdatetime"
+                id="localdatetime"> <br>
+
+            <label for="month">Choose your month:</label>
+            <input type="month" name="month" id="month"> <br>
+            
+            <label for="number">Enter age:</label>
+            <input type="number" name="number" id="number" min="1" max="100"> <br>
+
+            <label for="range">Choose a range:</label> 
+            <input type="range" name="range" id="range"></label> <br>
+
+            <label for="url">Enter website url</label>
+            <input type="url" name="url" id="url"> <br>
+
+            <label for="week">Choose week: </label>
+            <input type="week" name="week" id="week"> <br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
