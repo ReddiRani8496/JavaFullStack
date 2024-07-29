@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Update Owner</title>
+        <style>
+            
+         /* header */
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #41B06E;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .left-side {
+            display: flex;
+            align-items: center;
+        }
+
+        .left-side h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-side a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .right-side a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        /* .dropdown a:hover{
+            color:blue;
+        } */
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: blue;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .logout-button {
+            margin-left: 20px;
+            padding: 10px;
+            background-color: blue;
+            ;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .logout-button:hover {
+            background-color: blue;
+        }
+        /* form */
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding:0px 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 100px;
+  
+}
+
+.form-column {
+    flex: 0 0 48%;
+  
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #F6F5F2;
+}
+
+.buttons {
+    
+    margin-top: 5px;
+    
+}
+.create-button {
+    margin-left: 40%;
+}
+.create-button,
+.cancel-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    margin-left: 40px;
+}
+
+.update-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.update-row input {
+    display: inline-block;
+    width: 100px; /* Set the width as desired */
+}
+.update-row label {
+    margin-right: 10px;
+    
+}
+#ownerId1{
+    width: 10%;
+    height: 14px;
+}
+.update-row input {
+    flex: 0.2; /* Take remaining space */
+    margin-top:-2px;
+    
+}
+#searchButton {
+    background-color: #007bff;
+    color: white;
+    margin-left: 10px;
+    height: 30px;
+    border:none;
+    width: 80px;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+#searchButton {
+    margin-top: -6px;
+}
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="left-side">
+                <h1>TMS</h1>
+            </div>
+            <div class="right-side">
+                <div class="dropdown">
+                    <a href="#">Offence Types</a>
+                    <div class="dropdown-content">
+                        <a href="addOffence.html">Add</a>
+                        <a href="updateOffence.html">Update</a>
+                        <a href="deleteOffence.html">Delete</a>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Owners</a>
+                    <div class="dropdown-content">
+                        <a href="#">Add</a>
+                        <a href="#">Update</a>
+                        <a href="#">Delete</a>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Vehicles</a>
+                    <div class="dropdown-content">
+                        <a href="#">Add</a>
+                        <a href="#">Update</a>
+                        <a href="#">Delete</a>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <a href="#">Registration</a>
+                <a href="#" style="margin-right: 20px;">Transfer</a>
+                <div
+                    style="display: flex; align-items: center; margin-left: 20px;">
+
+                    <a href="#" class="logout-button">Logout</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Delete Owner</h1>
+            <form>
+                <div class="update-row">
+                    <label for="ownerId1">Owner ID:</label>
+                    <input type="text" id="ownerId1" name="ownerId">
+                    <button type="button" id="searchButton">Search</button>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="ownerId">Owner ID:</label>
+                            <input type="text" id="ownerId" name="ownerId">
+                        </div>
+                        <div class="form-group">
+                            <label for="idType">ID Type:</label>
+                            <input type="text" id="idType" name="idType">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Pincode:</label>
+                            <input type="text" id="pincode" name="pincode">
+                        </div>
+                        <div class="form-group">
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" id="occupation"
+                                name="occupation">
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="create-button">Delete</button>
+                    <button type="button" class="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

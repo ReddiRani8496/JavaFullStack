@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        input[required] {
+            background-color: aqua;
+        }
+        input[id="password"] {
+            background-color: yellow;
+            border-radius: 10px;
+        }
+
+        section[id^="section"] {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        section[id*="on"] {
+            background-color: aqua;
+        }
+
+        section[id$="1"] {
+            background-color: yellow;
+        }
+
+        button[type="submit"]:hover {
+            background-color: yellow;
+            border-radius: 10px;
+            cursor: crosshair;
+        }
+
+        input[type="password"]:focus {
+            background-color: red;
+        }
+
+        a:active {
+            font: italic;
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <form action=""><form action="">
+        <center>
+    <table>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+            <td><label for="confirmPassword">Confirm Password</label></td>
+            <td><input type="password" id="confirmPassword" name="confirmPassword"></td>
+        </tr>
+    </table>
+    <button type="submit">Submit</button>
+</center>
+</form>
+
+<section id="section-1">
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora similique aliquid placeat ipsa consectetur, error nemo unde commodi natus nobis quos quidem necessitatibus sequi. Quod fugit voluptatum corporis praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod numquam similique molestias voluptates pariatur natus nostrum soluta consectetur id.
+    </article>
+</section>
+
+<section id="section">
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora similique aliquid placeat ipsa consectetur, error nemo unde commodi natus nobis quos quidem necessitatibus sequi. Quod fugit voluptatum corporis praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quod numquam similique molestias voluptates pariatur natus nostrum soluta consectetur id.
+    </article>
+</section>
+       <a href="https://www.google.com">google</a>
+</body>
+</html>

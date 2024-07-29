@@ -1,0 +1,122 @@
+.cityscape {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/traffic.webp');
+    position: relative;
+}
+
+.building {
+    width: 50px;
+    height: 100px;
+    background-color: #666;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    z-index: -1;
+}
+
+.building:nth-child(2) {
+    left: 150px;
+}
+
+.building:nth-child(3) {
+    left: 290px;
+}
+
+.road {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.car,
+.truck {
+    width: 50px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.car {
+    left: 50px;
+    animation: car-animation 3s linear infinite;
+}
+
+.truck {
+    left: 150px;
+    width: 70px;
+    height: 30px;
+    animation: truck-animation 5s linear infinite;
+}
+
+.sidewalk {
+    width: 100%;
+    height: 20px;
+    background-color: #999;
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.pedestrian {
+    width: 10px;
+    height: 20px;
+    background-color: #666;
+    position: absolute;
+    bottom: 0;
+}
+
+.pedestrian:nth-child(2) {
+    left: 250px;
+    animation: pedestrian-animation 2s linear infinite;
+}
+
+@keyframes car-animation {
+    0% {
+        left: 50px;
+    }
+
+    100% {
+        left: 450px;
+    }
+}
+
+@keyframes truck-animation {
+    0% {
+        left: 150px;
+    }
+
+    100% {
+        left: 550px;
+    }
+}
+
+@keyframes pedestrian-animation {
+    0% {
+        left: 250px;
+    }
+
+    100% {
+        left: 450px;
+    }
+}
+
+.login-box {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}

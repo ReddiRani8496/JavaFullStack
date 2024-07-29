@@ -1,0 +1,49 @@
+
+* {
+    
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(192, 243, 243);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+h1 {
+    color: red ;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+   
+    text-align: center;
+
+}
+#welcome {
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.para {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(230, 141, 141);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}

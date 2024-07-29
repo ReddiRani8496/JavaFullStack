@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Record Management</title>
+        <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .top-nav {
+            position: fixed;
+            width: 100%;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .top-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #007bff;
+            color: #ffffff;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .sidebar a:hover, .sidebar a.active {
+            background-color: #0056b3;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #f7f7f7;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 250px;
+            margin-top: 40px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .search-filter-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-filter-container input, .search-filter-container select {
+            padding: 10px;
+            font-size: 14px;
+            margin-right: 10px;
+            border: 1px solid #d1e9ff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .table-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        td {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .pagination {
+            text-align: right;
+        }
+        .pagination a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 5px;
+        }
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            color: #333333;
+            border: 1px solid #d1e9ff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .input-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .input-group input:focus, .input-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .button-container {
+            text-align: right;
+        }
+        .save-button, .reset-button {
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .reset-button {
+            background-color: #dddddd;
+            color: #333333;
+        }
+        .reset-button:hover {
+            background-color: #cccccc;
+        }
+        .save-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top-nav">
+            <a href="#">Logout</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <a href="#">My Schedule</a>
+            <a href="#">Requests</a>
+            <a href="#">Patients</a>
+            <a href="#">Attendance</a>
+            <a href="#">Settings</a>
+            <a href="#" class="active">Patient Record Management</a>
+        </div>
+        <div class="main-content">
+            <h1>Patient Record Management</h1>
+            <div class="search-filter-container">
+                <div>
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" name="search"
+                        placeholder="Search...">
+                </div>
+                <div>
+                    <label for="filter-date">Filters:</label>
+                    <select id="filter-date" name="filter-date">
+                        <option value>Date</option>
+                        <!-- Add date options here -->
+                    </select>
+                    <select id="filter-department" name="filter-department">
+                        <option value>Department</option>
+                        <!-- Add department options here -->
+                    </select>
+                    <select id="filter-condition" name="filter-condition">
+                        <option value>Condition</option>
+                        <!-- Add condition options here -->
+                    </select>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Condition</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Doe</td>
+                            <td>Cardiology</td>
+                            <td>Stable</td>
+                            <td>
+                                <button>View</button>
+                                <button>Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Jane Smith</td>
+                            <td>Neurology</td>
+                            <td>Critical</td>
+                            <td>
+                                <button>View</button>
+                                <button>Edit</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Patient Details Form</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="patient-name">Name</label>
+                        <input type="text" id="patient-name" name="patient-name"
+                            value="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-id">ID</label>
+                        <input type="text" id="patient-id" name="patient-id"
+                            value="001" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-age">Age</label>
+                        <input type="text" id="patient-age" name="patient-age"
+                            value="45">
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-gender">Gender</label>
+                        <input type="text" id="patient-gender"
+                            name="patient-gender" value="Male">
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-contact">Contact</label>
+                        <input type="text" id="patient-contact"
+                            name="patient-contact" value="123-456-7890">
+                    </div>
+                    <div class="input-group">
+                        <label for="medical-history">Medical History</label>
+                        <textarea id="medical-history" name="medical-history"
+                            placeholder="Enter past medical conditions, surgeries, etc."></textarea>
+                    </div>
+                    <div class="input-group">
+
+                        <label for="current-treatment-plan">Current Treatment
+                            Plan</label>
+                        <textarea id="current-treatment-plan"
+                            name="current-treatment-plan"
+                            placeholder="Enter details of current treatment"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes"
+                            placeholder="Enter additional notes and observations"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button type="reset" class="reset-button">Reset</button>
+                        <button type="submit" class="save-button">Save
+                            Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            margin: 30px;
+        }
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+        }
+        #box1:hover {
+            width: 500px;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            transition: width 2s, height 2s;   
+        }
+        #box2:hover {
+            width: 500px;
+            /* height: 200px; */
+        }
+
+        #box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: all 2s ease;
+        }
+        #box3:hover {
+            width: 500px;
+            /* height: 200px; */
+        }
+
+        #box4 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: all 2s ease-in;
+        }
+        #box4:hover {
+            width: 500px;
+            /* height: 200px; */
+        }
+
+        #box5 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: all 2s ease-out;
+        }
+        #box5:hover {
+            width: 500px;
+            /* height: 200px; */
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box1"></div>
+
+    <div id="box2"></div>
+
+    <div id="box3"></div>
+
+    <div id="box4"></div>
+    
+    <div id="box5"></div>
+</body>
+</html>

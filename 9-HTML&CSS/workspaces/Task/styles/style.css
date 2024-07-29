@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-image img {
+    width: 100vw;
+    height: 40vh;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+#title {
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkturquoise;
+}
+
+#content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.top {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 190px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: calc(100% - 250px);
+    vertical-align: top;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+h4 {
+    margin: 10px 0;
+}

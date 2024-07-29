@@ -1,0 +1,74 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align children vertically */
+    gap: 40px;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://imgs.search.brave.com/P8HSvGK7UTv8QekeeoOqV550sTsA3ufyz8fU_jy2Ui8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/ZXJpYWwtdmlldy10/cmFmZmljLXJvYWQt/Y2l0eS10b3Atdmll/d18xMTQyLTQzMjk3/LmpwZz9zaXplPTYy/NiZleHQ9anBn");
+  }
+  
+  .login-container {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 10px; /* Space from the top */
+    margin-bottom: 20px; /* Space above the login container */
+    font-weight: bold;
+    color: white;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 80%;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

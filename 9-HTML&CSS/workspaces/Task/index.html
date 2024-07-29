@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="image" class="top-image">
+            <img src="images/training.webp" alt="training pic">
+        </div>
+        <h1 id="title">Training Feedback</h1>
+        <div id="content">
+            <form action>
+                <label for="firstname" class="top">First Name</label>
+                <input type="text" name="fname" id="firstname" class="name"
+                    minlength="8" maxlength="20" required> <br>
+                <label for="lastname" class="top">Last Name</label>
+                <input type="text" name="lname" id="lastname" class="name"
+                    minlength="8" maxlength="20" required> <br>
+                <label for="email" class="top">Enter your email</label>
+                <input type="email" name="email" id="email" class="name"> <br>
+                <label for="date" class="top">Training session date</label>
+                <input type="date" name="date" id="date" required> <br>
+
+                <h6>How would you rate the training content?</h6>
+                <input type="radio" name="contentRating" id="excellent">
+                <label for="excellent">Excellent</label><br>
+                <input type="radio" name="contentRating" id="good">
+                <label for="good">Good</label><br>
+                <input type="radio" name="contentRating" id="average">
+                <label for="average">Average</label><br>
+                <input type="radio" name="contentRating" id="poor">
+                <label for="poor">Poor</label><br>
+
+                <h6>Did the training cover all the topics you were
+                    expecting?</h6>
+                <input type="radio" name="topicCoverage" id="yes">
+                <label for="yes">Yes, completely</label><br>
+                <input type="radio" name="topicCoverage" id="mostly">
+                <label for="mostly">Mostly, with a few exceptions</label><br>
+                <input type="radio" name="topicCoverage" id="no">
+                <label for="no">No, not at all</label><br>
+
+                <h6>How useful was the training in helping you achieve your
+                    goals?</h6>
+                <input type="radio" name="usefulness" id="extremely">
+                <label for="extremely">Extremely useful</label><br>
+                <input type="radio" name="usefulness" id="moderate">
+                <label for="moderate">Moderately useful</label><br>
+                <input type="radio" name="usefulness" id="somewhat">
+                <label for="somewhat">Somewhat useful</label><br>
+                <input type="radio" name="usefulness" id="notUseful">
+                <label for="notUseful">Not useful at all</label><br>
+
+                <h6>How engaging was the trainer?</h6>
+                <input type="radio" name="engagement" id="extremelyEngaging">
+                <label for="extremelyEngaging">Extremely engaging</label><br>
+                <input type="radio" name="engagement" id="moderatelyEngaging">
+                <label for="moderatelyEngaging">Moderately engaging</label><br>
+                <input type="radio" name="engagement" id="somewhatEngaging">
+                <label for="somewhatEngaging">Somewhat engaging</label><br>
+                <input type="radio" name="engagement" id="notEngaging">
+                <label for="notEngaging">Not engaging at all</label><br>
+
+                <!-- <label for="comment">Additional comments or suggestions</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea> <br> -->
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+        </div>
+
+    </body>
+</html>
