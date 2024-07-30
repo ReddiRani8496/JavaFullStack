@@ -1,0 +1,15 @@
+steps to create component
+
+open cmd -> ng generate c component-Name
+files will be generated.
+
+write the content -> js data in ts file, html content,css
+
+then add the component inside the app.component.html
+then register in app.component.ts file -> import the component we created, add the componentname inside the imports.
+
+
+
+
+providers:[] -> app.config.ts -> used to store business logic
+bootstrap: -> app.config.ts -> used to store components.
