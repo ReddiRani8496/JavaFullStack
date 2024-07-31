@@ -1,0 +1,5 @@
+package tms.config;
+
+public class WebConfig {
+
+}

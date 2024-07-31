@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" com.springsource.tcserver.asf="false" com.springsource.tcserver.name="base-instance" com.springsource.tcserver.version="8.5.6.B.RELEASE" configuration-id="/Servers/Pivotal tc Server Developer Edition v3.2-config" deployDir="wtpwebapps" hostname="localhost" id="Pivotal tc Server Developer Edition v3.2" id-set="true" name="Pivotal tc Server Developer Edition v3.2" runtime-id="Pivotal tc Server Developer Edition (Runtime) v3.2" saveSeparateContextFiles="true" server-type="com.pivotal.server.tc.80" server-type-id="com.pivotal.server.tc.80" start-timeout="120" stop-timeout="15" testEnvironment="false" timestamp="1">
+    <list key="modules" value0="TMS_App::org.eclipse.jst.jee.server:TMS_App::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Apache Tomcat v8.5-New at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Apache Tomcat v8.5-New at localhost" name="Apache Tomcat v8.5-New at localhost" runtime-id="Apache Tomcat v8.5-New" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="Lesson07-SpringWeb::org.eclipse.jst.jee.server:Lesson07-SpringWeb::jst.web::2.5" value1="Lesson07-SpringJSF::org.eclipse.jst.jee.server:Lesson07-SpringJSF::jst.web::2.5" value2="TMS_App::org.eclipse.jst.jee.server:TMS_App::jst.web::2.5"/>
+  </server>
+</servers>

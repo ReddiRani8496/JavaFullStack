@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="training.iqgateway.business.impl.Customer"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.impl.CurrencyConverterImpl"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.impl.Circle"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.Shape"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.impl.Rectangle"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationListener"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.messaging.simp.stomp.BufferingStompDecoder"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="training.iqgateway.rowmapper.DepartmentRowMapper"/>
+<fullyQualifiedTypeName name="training.iqgateway.dao.DepartmentDAO"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.CurrencyConverter"/>
+<fullyQualifiedTypeName name="training.iqgateway.business.DepartmentBusinessBean"/>
+<fullyQualifiedTypeName name="training.iqgateway.entities.DepartmentEO"/>
+<fullyQualifiedTypeName name="training.iqgateway.dao.DAO"/>
+<fullyQualifiedTypeName name="tms.business.UserBusinessBean"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="tms.business.RoleBusinessBean"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="tms.business.impl.UserOperationsImpl"/>
+<fullyQualifiedTypeName name="training.iqgateway.dao.impl.UsersDAOImpl"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+<fullyQualifiedTypeName name="training.iqgateway.dao.impl.RoleDAOImpl"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+<fullyQualifiedTypeName name="training.iqgateway.entities.RoleEO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+<fullyQualifiedTypeName name="training.iqgateway.entities.UsersEO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+</qualifiedTypeNameHistroy>

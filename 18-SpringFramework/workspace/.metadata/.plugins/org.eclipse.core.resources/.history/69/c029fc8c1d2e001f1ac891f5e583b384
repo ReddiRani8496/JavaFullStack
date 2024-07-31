@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	  <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+<property name="messageConverters">
+ 
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+ 
+			</bean>
+ 
+		</property>
+</bean>
+	
+	
+	<bean id="sessionFactoryBean" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+	
+		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
+	</bean>
+	
+	<bean id="userDAOBean" class="training.iqgateway.dao.impl.UsersDAOImpl">
+	
+		<constructor-arg ref="sessionFactoryBean"></constructor-arg>
+		
+	</bean>
+	
+	
+	<bean id="userBusinessBean" class="tms.business.impl.UserOperationsImpl">
+		<constructor-arg ref="userDAOBean"></constructor-arg>
+	</bean>
+	
+	
+	
+	<bean id="roleDAOBean" class="training.iqgateway.dao.impl.RoleDAOImpl">
+	
+		<constructor-arg ref="sessionFactoryBean"></constructor-arg>
+		
+	</bean>
+	
+	
+	<bean id="roleBusinessBean" class="tms.business.impl.RoleOperationsImpl">
+		<constructor-arg ref="roleDAOBean"></constructor-arg>
+	</bean>
+	
+
+</beans>

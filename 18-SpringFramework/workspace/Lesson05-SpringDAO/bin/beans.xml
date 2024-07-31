@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="dataSourceBean" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
+		<property name="username" value="HR"></property>
+		<property name="password" value="HR"></property>
+	</bean>
+
+
+	<bean id="jdbcTemplateBean" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSourceBean"></constructor-arg>
+	</bean>
+	
+	<bean id="departmentDAOBean" class="training.iqgateway.dao.impl.DepartmentDAOImpl">
+	
+		<constructor-arg ref="jdbcTemplateBean"></constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="customerBean" class="training.iqgateway.business.impl.Customer" scope="singleton">
+		<constructor-arg value="1001" index="0"></constructor-arg>
+		<constructor-arg value="Rahul" index="1"></constructor-arg>
+		<constructor-arg value="Indirangar" index="2"></constructor-arg>
+		<constructor-arg  value="43564556" index="3"></constructor-arg>
+		
+		<!--  <property name="id" value="1001"></property>
+		<property name="name" value="Rahul"></property>
+		<property name="address" value="Indirangar"></property>
+		<property name="contact" value="43564556"></property> -->
+		
+	</bean>
+	
+	
+	<bean id="ccBean" class="training.iqgateway.business.impl.CurrencyConverterImpl" scope="singleton">
+	
+	<!-- Binding the dependency -->
+<!--	<property name="customerRef" ref="customerBean"></property>   -->
+
+		<constructor-arg ref="customerBean"></constructor-arg>
+	
+	</bean>	
+
+</beans>
+

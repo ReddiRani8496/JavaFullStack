@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Jun 19 12:06:34 IST 2024
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\reddirani.battuluri\\Documents\\Training\\18-SpringFramework\\workspace\\TMS_App\\WebContent\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE.jar=D\:\\SpringSoftwares\\STS3.8.3\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\TMS_App\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE.jar
+org.eclipse.jst.jee.server\:TMS_App=D\:\\SpringSoftwares\\STS3.8.3\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\TMS_App
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\reddirani.battuluri\\Documents\\Training\\18-SpringFramework\\workspace\\TMS_App\\WebContent\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE-sources.jar=D\:\\SpringSoftwares\\STS3.8.3\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\TMS_App\\WEB-INF\\lib\\spring-web-5.0.4.RELEASE-sources.jar

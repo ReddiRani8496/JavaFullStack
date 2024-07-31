@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<bean id="customerBean" class="training.iqgateway.business.impl.Customer"
+	      scope="singleton">
+<property name="id" value="1001"/>
+<property name="name" value="Rahul" />
+<property name="address" value="#23 6th Cross Indira Nagar Bengaluru"/>
+<property name="contact" value="9876543210" />
+</bean>
+ 
+	<bean id="ccBean" 
+		  class="training.iqgateway.business.impl.CurrencyConverterImpl"
+		  scope="singleton">
+<!--  Binding the Dependency  -->
+<property name="customerRef" ref="customerBean"/>
+</bean>
+ 
+ 
+	<!--  AOP Components -->
+<bean id="logBefAdviceBean" 
+		  class="training.iqgateway.aop.LoggingBeforeAdvice"/>
+<bean id="logAftAdviceBean"
+		  class="training.iqgateway.aop.LoggingAfterAdvice" />
+<!--  Bundling the Business Component With AOP Component  -->
+<bean id="businessBean" 
+		  class="org.springframework.aop.framework.ProxyFactoryBean">
+<!--  Registering Business Interface To Focus Only ON Those Methods -->
+<property name="proxyInterfaces" 
+				  value="training.iqgateway.business.CurrencyConverter"/>
+ 
+		<!--  Registering Which AOP Components to Be Binded With Business Clas -->				  
+<property name="interceptorNames">
+<list>
+<value>logBefAdviceBean</value>
+<value>logAftAdviceBean</value>
+</list>
+</property>
+<!--  Lastly Registering the Business Class -->
+<property name="target">
+<ref bean="ccBean"/>
+</property>
+</bean>
+</beans>

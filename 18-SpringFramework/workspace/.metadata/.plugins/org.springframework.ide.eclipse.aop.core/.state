@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Lesson04-AOP"/>
+<aop-project name="Lesson05-SpringDAO"/>
+<aop-project name="Lesson02-WithSpringConstructorInjection"/>
+<aop-project name="Lesson02-ShapesDemoWithSpring"/>
+<aop-project name="TMS"/>
+<aop-project name="Lesson03-ApplicationLifeCycle"/>
+<aop-project name="Lesson03-WithSpring-Autowiring"/>
+<aop-project name="TMS_App"/>
+<aop-project name="Lesson02-ShapesDemoWithSpringUsingScopes"/>
+<aop-project name="Lesson02-WithSpring"/>
+<aop-project name="Lesson02-ShapesDemoWithSpringUsingFactory"/>
+<aop-project name="Lesson06-SpringORM"/>
+</aop-reference-model>

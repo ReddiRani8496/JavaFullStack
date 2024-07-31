@@ -1,0 +1,4 @@
+127.0.0.1 - - [13/Jun/2024:16:14:53 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [13/Jun/2024:16:14:55 +0530] "GET /Lesson07-SpringWeb/ HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [13/Jun/2024:16:15:11 +0530] "GET /Lesson07-SpringWeb/CurrencyConvertor.html HTTP/1.1" 200 564
+0:0:0:0:0:0:0:1 - - [13/Jun/2024:16:15:18 +0530] "POST /Lesson07-SpringWeb/CurrencyConvertorServlet HTTP/1.1" 200 97

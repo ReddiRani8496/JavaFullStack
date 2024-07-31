@@ -1,0 +1,5 @@
+package tms.business.impl;
+
+public class WebConfig {
+
+}

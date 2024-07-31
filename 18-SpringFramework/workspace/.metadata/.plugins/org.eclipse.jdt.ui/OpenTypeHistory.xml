@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Lesson04-AOP/D:\/spring-framework-5.0.4.RELEASE-dist\/spring-framework-5.0.4.RELEASE\/libs\/spring-aop-5.0.4.RELEASE.jar&lt;org.springframework.aop(AfterAdvice.class[AfterAdvice" modifiers="1537" timestamp="1718089156303"/>
+<typeInfo handle="=Lesson04-AOP/D:\/spring-framework-5.0.4.RELEASE-dist\/spring-framework-5.0.4.RELEASE\/libs\/spring-aop-5.0.4.RELEASE.jar&lt;org.springframework.aop(AfterReturningAdvice.class[AfterReturningAdvice" modifiers="1537" timestamp="1718089156303"/>
+<typeInfo handle="=Lesson05-SpringDAO/src&lt;training.iqgateway.dao{DepartmentDAO.java[DepartmentDAO" modifiers="513" timestamp="1718256050919"/>
+<typeInfo handle="=Lesson05-SpringDAO/D:\/spring-framework-5.0.4.RELEASE-dist\/spring-framework-5.0.4.RELEASE\/libs\/spring-jdbc-5.0.4.RELEASE.jar&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1718089161454"/>
+<typeInfo handle="=Lesson06-SpringORM/src&lt;training.iqgateway.business{DepartmentBusinessBean.java[DepartmentBusinessBean" modifiers="513" timestamp="1718262124443"/>
+</typeInfoHistroy>
